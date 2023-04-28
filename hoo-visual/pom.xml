@@ -9,7 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>hoo-visual-monitor</module>
+        <module>hoo-monitor</module>
     </modules>
 
     <artifactId>hoo-visual</artifactId>
