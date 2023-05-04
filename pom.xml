@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
+    <groupId>top.codehoo</groupId>
     <artifactId>hoo</artifactId>
     <version>3.6.2</version>
 
@@ -145,63 +145,63 @@
 
             <!-- 核心模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-core</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 接口模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-swagger</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 安全模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-security</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 权限范围 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-datascope</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 多数据源 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-datasource</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 分布式事务 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-seata</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 日志记录 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-log</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 缓存服务 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-common-redis</artifactId>
                 <version>${hoo.version}</version>
             </dependency>
 
             <!-- 系统接口 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
+                <groupId>top.codehoo</groupId>
                 <artifactId>hoo-api-system</artifactId>
                 <version>${hoo.version}</version>
             </dependency>

@@ -1,3 +1,3 @@
-# com.ruoyi.common.swagger.config.SwaggerAutoConfiguration
-# com.ruoyi.common.swagger.config.SwaggerWebConfiguration
-# com.ruoyi.common.swagger.config.SwaggerBeanPostProcessor
+# top.codehoo.common.swagger.config.SwaggerAutoConfiguration
+# top.codehoo.common.swagger.config.SwaggerWebConfiguration
+# ctop.codehoo.common.swagger.config.SwaggerBeanPostProcessor
