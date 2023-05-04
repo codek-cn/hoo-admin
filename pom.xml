@@ -13,7 +13,7 @@
     <description>若依微服务系统</description>
 
     <properties>
-        <ruoyi.version>3.6.2</ruoyi.version>
+        <hoo.version>3.6.2</hoo.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -147,63 +147,63 @@
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-core</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 接口模块 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-swagger</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 安全模块 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-security</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 权限范围 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-datascope</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 多数据源 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-datasource</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 分布式事务 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-seata</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 日志记录 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-log</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 缓存服务 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-common-redis</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
             <!-- 系统接口 -->
             <dependency>
                 <groupId>com.ruoyi</groupId>
                 <artifactId>hoo-api-system</artifactId>
-                <version>${ruoyi.version}</version>
+                <version>${hoo.version}</version>
             </dependency>
 
         </dependencies>

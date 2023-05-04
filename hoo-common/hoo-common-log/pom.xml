@@ -20,7 +20,7 @@
         <!-- RuoYi Common Security -->
         <dependency>
             <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-common-security</artifactId>
+            <artifactId>hoo-common-security</artifactId>
         </dependency>
         
     </dependencies>
