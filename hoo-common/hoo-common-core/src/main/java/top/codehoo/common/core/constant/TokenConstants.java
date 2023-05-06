@@ -1,5 +1,9 @@
 package top.codehoo.common.core.constant;
 
+import org.apache.commons.codec.digest.Md5Crypt;
+
+import java.nio.charset.StandardCharsets;
+
 /**
  * Token的Key常量
  * 
@@ -7,6 +11,11 @@ package top.codehoo.common.core.constant;
  */
 public class TokenConstants
 {
+    private static String secret = "";
+    static {
+        secret = Md5Crypt.md5Crypt("code_hoo".getBytes(StandardCharsets.UTF_8));
+    }
+
     /**
      * 令牌自定义标识
      */
@@ -20,6 +29,6 @@ public class TokenConstants
     /**
      * 令牌秘钥
      */
-    public final static String SECRET = "abcdefghijklmnopqrstuvwxyz";
+    public final static String SECRET = secret;
 
 }

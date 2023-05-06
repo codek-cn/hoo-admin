@@ -1,9 +1,6 @@
 package top.codehoo.common.log.aspect;
 
-import java.util.Collection;
-import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.alibaba.fastjson2.JSON;
 import org.apache.commons.lang3.ArrayUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -18,7 +15,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.multipart.MultipartFile;
-import com.alibaba.fastjson2.JSON;
 import top.codehoo.common.core.utils.ServletUtils;
 import top.codehoo.common.core.utils.StringUtils;
 import top.codehoo.common.core.utils.ip.IpUtils;
@@ -28,6 +24,11 @@ import top.codehoo.common.log.filter.PropertyPreExcludeFilter;
 import top.codehoo.common.log.service.AsyncLogService;
 import top.codehoo.common.security.utils.SecurityUtils;
 import top.codehoo.system.api.domain.SysOperLog;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * 操作日志记录处理
@@ -52,9 +53,10 @@ public class LogAspect
     /**
      * 处理请求前执行
      */
-    @Before(value = "@annotation(controllerLog)")
+    @Before(value = "@annotation(controllerLog)") //指定切点为Log注解，即此方法在Log注解标记的方法之前执行
     public void boBefore(JoinPoint joinPoint, Log controllerLog)
     {
+        // 向线程中设置时间以记录方法开始时间 方便获取操作总消耗时间
         TIME_THREADLOCAL.set(System.currentTimeMillis());
     }
 
@@ -63,7 +65,7 @@ public class LogAspect
      *
      * @param joinPoint 切点
      */
-    @AfterReturning(pointcut = "@annotation(controllerLog)", returning = "jsonResult")
+    @AfterReturning(pointcut = "@annotation(controllerLog)", returning = "jsonResult")//returning -> 切点方法运行完成后的返回值
     public void doAfterReturning(JoinPoint joinPoint, Log controllerLog, Object jsonResult)
     {
         handleLog(joinPoint, controllerLog, null, jsonResult);
