@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hoo-common-swagger" />
+        <module name="hoo-gateway" />
+        <module name="hoo-common-seata" />
+        <module name="hoo-modules-system" />
+        <module name="hoo-common-core" />
+        <module name="hoo-common-datasource" />
+        <module name="hoo-common-log" />
+        <module name="hoo-modules-job" />
+        <module name="hoo-visual-monitor" />
+        <module name="hoo-modules-file" />
+        <module name="hoo-auth" />
+        <module name="hoo-common-redis" />
+        <module name="hoo-common-datascope" />
+        <module name="hoo-common-security" />
+        <module name="hoo-modules-gen" />
+        <module name="hoo-api-system" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
